@@ -124,11 +124,16 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     padding: 4rem 0 6rem 0;
 }
 
 .hero-content {
-    max-width: 800px;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .badge {
@@ -239,6 +244,68 @@ h1 {
 .terminal-info .prompt {
     color: var(--text-primary);
     margin-right: 0.5rem;
+}
+
+/* Github Promo Element */
+.github-promo {
+    background: var(--glass-bg);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 3rem 2rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.promo-content {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.promo-icon {
+    color: var(--text-primary);
+    background: rgba(0, 255, 65, 0.1);
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: -0.5rem;
+}
+
+.promo-text h2 {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.promo-text p {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.github-btn {
+    display: inline-block;
+    background-color: var(--text-primary);
+    color: var(--bg-color);
+    padding: 0.8rem 2rem;
+    border-radius: 2px;
+    text-decoration: none;
+    font-family: var(--font-mono);
+    font-weight: 700;
+    transition: all var(--anim-speed) ease;
+    border: 1px solid var(--text-primary);
+}
+
+.github-btn:hover {
+    background-color: transparent;
+    color: var(--text-primary);
+    box-shadow: 0 0 15px rgba(0, 255, 65, 0.3);
 }
 
 /* Footer */
